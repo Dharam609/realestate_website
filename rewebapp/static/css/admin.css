@@ -1,7 +1,7 @@
 #header{
-    min-height: 50px;
+    height: 50px;
     color: #ffffff;
-    background: #10384e;
+    background: #10284e;
 }
 
 #branding h1{
@@ -10,12 +10,12 @@
 
 a:link,
 a:visited{
-    color: #10384e;
+    color: #10284e;
 }
 
 div.breadcrumbs{
     background: #30caa0;
-    color: #10384e;
+    color: #10284e;
 }
 
 div.breadcrumbs a{

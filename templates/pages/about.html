@@ -8,8 +8,9 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
-          <h1 class="display-4">About BT Real Estate</h1>
-          <p class="lead">Please use our service for the best price of your deal.</p>
+          <h1 class="display-4">DAS Real Estate</h1>
+          <h1 >[Real Estate Management without Realtors!]</h1>
+          <h3 >Providing services for fair deals...</h3>
         </div>
       </div>
     </div>
@@ -34,12 +35,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h2>We Search For The Perfect Home</h2>
-          <p class="lead">Best properties from different towns.</p>
-          <img src="{% static 'img/about.jpg' %}" alt="">
-          <p class="mt-4">Please use our service for the best price of your deal.</p>
+          <h2>Find A Perfect Home</h2>
+          <p class="lead">Best properties from all towns and cities.</p>         
         </div>
-
+        <div class="col-12 d-flex justify-content-center">
+          <img src="{% static 'img/about.jpg' %}" alt="">
+        </div>
+        <p class="mt-4">Please use our service for fair deals.</p>
+<!-- 
         <div class="col-md-4">
             {% if mvp_realtors %}
               {% for realtor in mvp_realtors %}            
@@ -54,7 +57,7 @@
                 </div>
           {% endfor %}
           {% endif %}
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -64,18 +67,18 @@
     <h2 class="display-4">We Work For You</h2>
     <h4>Please use our service for the best price of your deal.</h4>
     <hr>
-    <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
   </section>
 
   <!-- Team -->
-  <section id="team" class="py-5">
+  <!-- <section id="team" class="py-5">
     <div class="container">
       <h2 class="text-center">Our Team</h2>
       <div class="row text-center">
         {% if realtors %}
           {% for realtor in realtors %}
           <div class="col-md-4">
-            <img src="{{ realtor.photo.url }}" alt="" width="130" height="300">
+            <img src="{{ realtor.photo.url }}" alt="" class="img-fluid">
             <h4>{{ realtor.name }}</h4>
             <p class="text-success">
               <i class="fas fa-award text-success mb-3"></i> Realtor</p>
@@ -94,5 +97,5 @@
        
       </div>
     </div>
-  </section>
+  </section> -->
 {% endblock content %}
